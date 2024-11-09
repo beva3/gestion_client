@@ -23,10 +23,12 @@ for client in clients:
 manager.display_client()
 
 # remove a client if id is even
-for client in clients:
-    if client.id % 2 == 0:
-        manager.remove_client(client.id)
+# for client in clients:
+#     if client.id % 2 == 0:
+#         manager.remove_client(client.id)
 
 # display client
-manager.display_client()
+# manager.display_client()
 
+# search a client by id
+manager.search_clients("Dupont")

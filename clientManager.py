@@ -23,3 +23,11 @@ class ClientManager:
                 print(f"Client with ID {client_id} removed successfully.")
                 return
         print(f"Client with ID {client_id} not found.")
+    
+    def search_clients(self,name):
+        print(f"Searching clients... name = {name}")
+        for client in self.clients:
+            if client.name == name:
+                client.disply_details()
+                return
+        print(f"Client with ID {name} not found.")
