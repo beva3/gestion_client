@@ -15,3 +15,6 @@ clients = [
 for client in clients:
     manager.add_client(client)
 
+# display all clients
+manager.display_client()
+
