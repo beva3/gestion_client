@@ -32,3 +32,9 @@ manager.display_client()
 
 # search a client by id
 manager.search_clients("Dupont")
+
+# update a client
+manager.update_client(4, name="Dupont Updated", email="dupont.updated@example.com")
+
+# display client
+manager.display_client()

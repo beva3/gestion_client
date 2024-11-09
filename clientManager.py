@@ -31,3 +31,16 @@ class ClientManager:
                 client.disply_details()
                 return
         print(f"Client with ID {name} not found.")
+    
+    def update_client(self,client_id,name=None,email=None,phone=None):
+        for client in self.clients:
+            if client.id == client_id:
+                if name:
+                    client.name = name
+                if email:
+                    client.email = email
+                if phone:
+                    client.phone = phone
+                print(f"Client with ID {client_id} updated successfully.")
+                return
+        print(f"Client with ID {client_id} not found.")
