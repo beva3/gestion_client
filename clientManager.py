@@ -15,3 +15,11 @@ class ClientManager:
             return
         for client in self.clients:
             client.disply_details()
+    
+    def remove_client(self, client_id):
+        for client in self.clients:
+            if client.id == client_id:
+                self.clients.remove(client)
+                print(f"Client with ID {client_id} removed successfully.")
+                return
+        print(f"Client with ID {client_id} not found.")
